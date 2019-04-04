@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="T4Toolbox.16" Version="|%CurrentProject%;GetPackageVersion|" Language="en-US" Publisher="Oleg Sych" />
         <DisplayName>T4 Toolbox for Visual Studio 2019</DisplayName>
-        <Description>Extends Text Templates with syntax colorization, error reporting, outlining, QuickInfo tooltips, statement completion, generation of multiple output files with source control integration, support for template parameters in Solution Explorer properties and more.</Description>
+        <Description xml:space="preserve">Extends Text Templates with syntax colorization, error reporting, outlining, QuickInfo tooltips, statement completion, generation of multiple output files with source control integration, support for template parameters in Solution Explorer properties and more.</Description>
         <MoreInfo>https://github.com/olegsych/T4Toolbox</MoreInfo>
         <License>License.txt</License>
         <GettingStartedGuide>http://olegsych.github.io/T4Toolbox/getting-started.html</GettingStartedGuide>
@@ -14,7 +14,7 @@
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
-        <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" d:Source="Installed" Version="[16.0,17.0)" />
+        <Dependency d:Source="Installed" Version="[16.0,17.0)" Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" />
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="T4Toolbox.VisualStudio" Path="|T4Toolbox.VisualStudio;PkgdefProjectOutputGroup|" />
@@ -25,7 +25,7 @@
         <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="T4Toolbox.VisualStudio.Editor" Path="|T4Toolbox.VisualStudio.Editor|" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.TextTemplating" Version="[16.0, 17.0)" DisplayName="Text Template Transformation" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.TextTemplating" Version="[16.0,17.0)" DisplayName="Text Template Transformation" />
         <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[16.0,17.0)" DisplayName="C# and Visual Basic" />
     </Prerequisites>
 </PackageManifest>

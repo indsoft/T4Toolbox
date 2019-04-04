@@ -5,7 +5,6 @@
 namespace T4Toolbox.VisualStudio.Editor
 {
     using System;
-    using System.Collections.Generic;
     using System.Diagnostics;
     using System.Threading;
     using System.Threading.Tasks;
@@ -19,7 +18,7 @@ namespace T4Toolbox.VisualStudio.Editor
         public TemplateQuickInfoSource(ITextBuffer buffer)
         {
             Debug.Assert(buffer != null, "buffer");
-            this.analyzer = TemplateAnalyzer.GetOrCreate(buffer);
+            analyzer = TemplateAnalyzer.GetOrCreate(buffer);
         }
 
         public Task<QuickInfoItem> GetQuickInfoItemAsync(IAsyncQuickInfoSession session, CancellationToken cancellationToken)
@@ -30,7 +29,7 @@ namespace T4Toolbox.VisualStudio.Editor
                 throw new ArgumentNullException("session");
             }
 
-            TemplateAnalysis analysis = this.analyzer.CurrentAnalysis;
+            TemplateAnalysis analysis = analyzer.CurrentAnalysis;
             SnapshotPoint? triggerPoint = session.GetTriggerPoint(analysis.TextSnapshot);
             if (triggerPoint != null && analysis.Template != null)
             {

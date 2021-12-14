@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="T4Toolbox.16" Version="|%CurrentProject%;GetPackageVersion|" Language="en-US" Publisher="Oleg Sych" />
-        <DisplayName>T4 Toolbox for Visual Studio 2019</DisplayName>
+        <Identity Id="T4Toolbox.16" Version="16.0.0.0" Language="en-US" Publisher="Oleg Sych" />
+        <DisplayName>T4 Toolbox for Visual Studio 2019 (IndSoft)</DisplayName>
         <Description xml:space="preserve">Extends Text Templates with syntax colorization, error reporting, outlining, QuickInfo tooltips, statement completion, generation of multiple output files with source control integration, support for template parameters in Solution Explorer properties and more.</Description>
-        <MoreInfo>https://github.com/olegsych/T4Toolbox</MoreInfo>
+        <MoreInfo>https://github.com/indsoft/T4Toolbox</MoreInfo>
         <License>License.txt</License>
         <GettingStartedGuide>http://olegsych.github.io/T4Toolbox/getting-started.html</GettingStartedGuide>
-        <ReleaseNotes>https://github.com/olegsych/T4Toolbox/releases</ReleaseNotes>
     </Metadata>
     <Installation InstalledByMsi="false">
         <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Community" />

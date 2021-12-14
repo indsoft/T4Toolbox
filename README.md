@@ -11,13 +11,11 @@ text templates in Visual Studio and allows you to:
 - Edit text templates in Visual Studio 2015 with syntax colorization, outlining, QuickInfo tooltips, 
 error reporting and statement completion 
 
-You can install the latest stable version of T4 Toolbox using the Extension Manager in Visual Studio or download 
-it from the [marketplace](https://marketplace.visualstudio.com/search?term=T4Toolbox&target=VS).
+~~You can install the latest stable version of T4 Toolbox using the Extension Manager in Visual Studio or download 
+it from the [marketplace](https://marketplace.visualstudio.com/search?term=T4Toolbox&target=VS).~~
 To learn more, visit the [Getting Started](http://olegsych.github.io/T4Toolbox/getting-started.html) wiki page.
 
 ## Building T4 Toolbox 
-
-[![Build status](https://ci.appveyor.com/api/projects/status/github/olegsych/t4toolbox?branch=master&retina=true)](https://ci.appveyor.com/project/olegsych/t4toolbox/branch/master)
 
 Pre-requisites
 - [Visual Studio 2017](https://www.visualstudio.com/downloads), 

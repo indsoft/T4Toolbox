@@ -1,3 +1,6 @@
+# Guide:
+https://www.ashleyhollis.com/how-to-install-t4-toolbox-for-visual-studio-2019
+
 # T4 Toolbox
 
 T4 Toolbox extends the code generation functionality of the [T4](https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates) 
